@@ -1,3 +1,37 @@
+*{
+  margin-left: 5px;
+  background-color: lavenderblush;
+  text-align: center;
+}
+
+h1{
+  margin-bottom: 0;
+}
+
+.addMore{
+  margin-top: 20px;
+}
+
+button{
+  background-color: white;
+  font-size: medium;
+}
+
+.timer{
+  margin-top: 50px;
+}
+
+.clock{
+  margin-right: 20px;
+  border-style: dashed;
+  border-color: black;
+  padding: 5px;
+  color: darkgreen;
+  background-color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
+
 .App {
   text-align: center;
 }
