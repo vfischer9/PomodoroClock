@@ -145,10 +145,10 @@ class DisplayTime extends React.Component{
                 <h1>Pomodoro Clock</h1>
                 <button onClick={this.startTime}>Start Timer</button>
                 <button onClick={this.stopTime}>Stop Timer</button>
-                <div class='timer'>
-                    <span class='clock'>Time: {minutes}:{seconds < 10 ? `0${ seconds }` : seconds }</span>
+                <div className='timer'>
+                    <span className='clock'>Time: {minutes}:{seconds < 10 ? `0${ seconds }` : seconds }</span>
                 </div>
-                <div class='addMore'>
+                <div className='addMore'>
                     <button onClick={this.handleClick1}>Add 1 Min</button>
                     <button onClick={this.handleClick2}>Add 1 Sec</button>
                     <button onClick={this.handleClick3}>Subtract 1 Min</button>
