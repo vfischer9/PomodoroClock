@@ -139,7 +139,7 @@ class DisplayTime extends React.Component{
       }
 
     render(){
-        const { minutes, seconds, breakMin, breakSec, break10Min } = this.state
+        const { minutes, seconds, breakMin, breakSec } = this.state
         return (
             <div>
                 <h1>Pomodoro Clock</h1>
