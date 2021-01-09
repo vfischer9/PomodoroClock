@@ -10,11 +10,15 @@ h1{
 
 .addMore{
   margin-top: 20px;
+  margin-bottom: 5px;
 }
+
 
 button{
   background-color: white;
   font-size: medium;
+  padding: 5px;
+  text-align: center;
 }
 
 .timer{

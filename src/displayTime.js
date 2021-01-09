@@ -8,6 +8,8 @@ class DisplayTime extends React.Component{
         this.handleClick2 = this.handleClick2.bind(this);
         this.startTime = this.startTime.bind(this);
         this.stopTime = this.stopTime.bind(this);
+        this.handleClick3 = this.handleClick3.bind(this);
+        this.handleClick4 = this.handleClick4.bind(this);
       }
 
     state = {
@@ -67,6 +69,39 @@ class DisplayTime extends React.Component{
         }) 
       }
 
+      handleClick3() {
+        this.setState(state => {
+            if(state.minutes > 0){
+                return {
+                    minutes: state.minutes - 1
+                }
+            } else{
+                return {
+                    minutes: 0
+                }
+            }
+            
+        }) 
+      }
+
+      handleClick4() {
+        this.setState(state => {
+            if(state.seconds > 0){
+                return {
+                    seconds: state.seconds - 1
+                }
+            } else if (state.seconds === 0 && state.minutes !== 0){
+                return {
+                    seconds: 59
+                }
+            } else{
+                return {
+                    seconds: 0
+                }
+            }
+        }) 
+      }
+
     render(){
         const { minutes, seconds } = this.state
         return (
@@ -80,6 +115,8 @@ class DisplayTime extends React.Component{
                 <div class='addMore'>
                     <button onClick={this.handleClick1}>Add 1 Min</button>
                     <button onClick={this.handleClick2}>Add 1 Sec</button>
+                    <button onClick={this.handleClick3}>Subtract 1 Min</button>
+                    <button onClick={this.handleClick4}>Subtract 1 Sec</button>
                 </div>
             </div>
             )
